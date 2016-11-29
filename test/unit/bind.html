@@ -450,7 +450,7 @@ suite('computed bindings with dynamic functions', function() {
     el = document.createElement('x-child-template-with-dynamic-fn');
     document.body.appendChild(el);
     CustomElements.takeRecords();
-
+    
     setTimeout(function() {
       var check = el.root.querySelector('p');
       assert.equal(check.textContent, 'text');
